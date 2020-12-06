@@ -1,0 +1,40 @@
+  MySet<int> numbers;
+
+    numbers.add(10);
+    numbers.add(17);
+    numbers.add(16);
+    numbers.add(66);
+    numbers.add(89);
+    numbers.add(5);
+    numbers.add(61);
+    numbers.add(52);
+    numbers.add(48);
+    numbers.add(98);
+    numbers.add(67);
+    numbers.add(43);
+    numbers.add(25);
+
+
+    numbers.print();
+
+    cout << "numbers size: " << numbers.size() << "\n";
+    MySet<int> numbers2;
+
+    numbers2.add(12);
+    numbers2.add(17);
+    numbers2.add(29);
+    numbers2.add(69);
+    numbers2.add(90);
+    numbers2.add(6);
+    numbers2.add(61);
+    numbers2.add(52);
+    numbers2.add(48);
+
+    numbers2.print();
+
+    cout << "numbers2 size: " << numbers2.size() << "\n";
+
+    MySet<int> numbers3 = numbers.unionWith(numbers2);
+    numbers3.print();
+
+    cout << "numbers2 size: " << numbers3.size() << "\n";

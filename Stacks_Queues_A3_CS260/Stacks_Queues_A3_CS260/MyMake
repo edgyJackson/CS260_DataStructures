@@ -1,0 +1,22 @@
+all: Assign3Main.exe Assign3HTML.exe Assign3Word.exe
+
+	
+Assign3Main.exe: makeDirectory
+	g++ -std=c++11 -o linux/Assign3Main.exe main.cpp Stack.h Queue.h 
+
+Assign3HTML.exe: makeDirectory
+	g++ -std=c++11 -o linux/Assign3HTML.exe HTMLParse.cpp Stack.h Queue.h
+
+Assign3Word.exe: makeDirectory
+	g++ -std=c++11 -o linux/Assign3Word.exe WordLadder.cpp Stack.h Queue.h
+
+
+makeDirectory:
+	mkdir -p linux
+
+	
+
+clean:
+
+	#remove the linux directory
+	rm -rf linux

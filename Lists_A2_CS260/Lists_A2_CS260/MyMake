@@ -1,0 +1,12 @@
+all:
+
+	#make a directory to hold the build product	
+	mkdir -p linux
+
+	#build MyProgram to that directory
+	g++ -g -std=c++11 -o linux/assign2.exe main.cpp Address.cpp AddresslinkedList.cpp 
+
+clean:
+
+	#remove the linux directory
+	rm -rf linux

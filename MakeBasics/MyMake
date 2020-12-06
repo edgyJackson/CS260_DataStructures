@@ -1,0 +1,13 @@
+all:
+
+	#make a directory to hold the build product	
+	mkdir -p linux
+
+	#build MyProgram to that directory
+	g++ -std=c++11 -o linux/MyProgram.exe main.cpp Answer.cpp
+
+
+clean:
+
+	#remove the linux directory
+	rm -rf linux
